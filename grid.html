@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WEB2 - grid</title>
+        <style>
+            #grid {
+                border:5px solid pink;
+                display:grid;
+                grid-template-columns:150px 1fr; /*첫단어 / 나머지 공간*/
+            }
+            
+            div {
+                border:5px solid gray;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="grid">                             <!--div는 block / span은 inline-->
+            <div>NAVIGATION</div>          
+            <div>Navigation is a field of study that focuses on the process of monitoring and controlling the movement of a craft or vehicle from one place to another. The field of navigation includes four general categories: land navigation, marine navigation, aeronautic navigation, and space navigation.</div>
+            <!--caniuse.com으로 확인하고 쓰는거 추천-->
+        </div>
+        
+    </body>
+</html>

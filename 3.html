@@ -3,13 +3,46 @@
 <head>
     <title>WEB1 - JavaScript</title>
     <meta charset="utf-8">  
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HSST5RENR5"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HSST5RENR5');
+    </script>
+    <style>
+        body {
+            margin:0;
+        }
+
+        a {                   /*tag (element)는 가장 포괄적이며 순위가 가장 낮음*/
+            color:black;
+            text-decoration:none;
+        }
+
+        .saw {                /*같은 선택자는 순서대로 반영 / 중간 순위*/
+            color:gray;  
+        }
+
+        #active {             /*id는 한번만 나타나야하며 순위가 가장 높음*/
+            color:red;      
+        }
+
+        h1 {
+            font-size:400%;
+            text-align:center;
+            border-bottom:1px solid gray;
+            margin:0;
+            padding:20px;
+        }
+    </style>
 </head>
 <body>
     <h1><a href="index.html">WEB</a></h1>
     <ol>  
-        <li><a href="1.html">HTML</a></li>                  
+        <li><a href="1.html" class="saw">HTML</a></li>                  
         <li><a href="2.html">CSS</a></li>
-        <li><a href="3.html">JavaScript</a></li>
+        <li><a href="3.html" class="saw" id="active">JavaScript</a></li>
     </ol>
     <h2>JavaScript</h2>
     <p><a href="https://www.w3schools.com/js/default.asp" target="_blank" title="html5 specification">JavaScript</a> (/ˈdʒɑːvəskrɪpt/), often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.</p>

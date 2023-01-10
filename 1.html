@@ -2,23 +2,93 @@
 <html>
 <head>
     <title>WEB1 - HTML</title>
-    <meta charset="utf-8">              <!--한글 깨질 때-->
+    <meta charset="utf-8">                       <!--한글 깨질 때-->
+    <style>
+        a {      
+            /*모든 a 태그에 대하여 / selector (선택자)
+            먼저 a 전체가 선택되고 밑에 style 속성이 그 다음에 선택되는거라서 결과적으로 red가 보이는건지???*/                               
+            color:rgba(40, 113, 125, 0.511);
+            text-decoration:none;
+        }
+
+        h1 {
+            font-size:400%;        /*60px*/
+            text-align:center;
+        }
+
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HSST5RENR5"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HSST5RENR5');
+    </script>
 </head>
 <body>
     <h1><a href="index.html">WEB</a></h1>
-    <ol>                                <!--ordered list-->
-        <li><a href="1.html">HTML</a></li>                  
+    <ol>                                         <!--ordered list-->
+        <li><a href="1.html" style="color:red;text-decoration:underline">HTML</a></li>   
+        <!--따로 html로 style 속성 설정 / 선택자 X??-->         
         <li><a href="2.html">CSS</a></li>
         <li><a href="3.html">JavaScript</a></li>
     </ol>
+<!--
+    <h1><a href="index.html"><font color="red">WEB</font></a></h1>
+    <ol>
+        <li><a href="1.html"><font color="red">HTML</font></a></li>                  
+        <li><a href="2.html"><font color="red">CSS</font></a></li>
+        <li><a href="3.html"><font color="red">JavaScript</font></a></li>
+    </ol>
+-->
     <h2>HTML</h2>
-    <ul>                                <!--unordered list-->
+    <ul>                                         <!--unordered list-->
         <li>smth</li>
         <li>smth</li>
     </ul>
+    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/MLXlXCwA0T4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
     <p><a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target="_blank" title="html5 specification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
     <!--target="_blank": 새탭에서 열기--> 
     <img src="coding.jpg" width="100%" style="margin-top:15px;">
     <p style="margin-top:15px;">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.</p>
+    <p><div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://web1-ga6lcbeht1.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></p>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/63bca86947425128790c8e31/1gmcf3ngn';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
 </body>
 </html>
+
+
+<!--깃허브가 만들어준 웹사이트를 구글 애널리틱스에 씀
+근데 깃허브에 반영을 안해서 (업로드/업데이트 안함) 
+그래서 그 URL로 열면 반영X
+근데 Port로 연 사이트에는 (실시간 반영) 구글 애널리틱스 반영O-->
